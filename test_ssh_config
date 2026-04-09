@@ -1,0 +1,15 @@
+Host test-server
+    HostName 192.168.1.50
+    User admin
+    Port 22
+    IdentityFile ~/.ssh/id_rsa
+
+Host dev-box
+    HostName dev.example.com
+    User developer
+    Port 2222
+
+Host prod-db
+    HostName db.prod.example.com
+    User dbadmin
+    ProxyJump bastion.example.com
